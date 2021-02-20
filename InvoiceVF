@@ -1,0 +1,19 @@
+<apex:page standardController="customer__c" tabStyle="customer__c">
+   
+    <apex:form >
+        <apex:pageBlock >
+        <apex:pageBlockSection title="Invoice">
+             <apex:outputField label="CUSTOMER NAME :" value="{! Customer__c.Name }"/>
+             <apex:outputField label="ADDRESS :" value="{! Customer__c.Address__c }"/>
+             <apex:outputField label="PHONE NUMBER :" value="{! Customer__c.Phone_Number__c }"/>
+            <apex:outputField label="PRODUCT NAME :" value="{! Customer__c.Product_Name__c }"/>
+             <apex:outputField label="PRODUCT COST :" value="{! Customer__c.Product_Cost__c }"/>
+             <apex:outputField label="DELIVERY CHARGE :" value="{! Customer__c.Delivery_charge__c }"/>
+             <apex:outputField label="DRIVER CHARGE :" value="{! Customer__c.Driver_charge__c }"/>
+             <apex:outputField label="TOTAL COST :" value="{! Customer__c.Total_Cost__c }"/>
+         </apex:pageBlockSection>
+        </apex:pageBlock>
+       
+    </apex:form>
+   
+</apex:page>
